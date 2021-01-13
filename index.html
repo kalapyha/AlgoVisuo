@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css"
+			integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK"
+			crossorigin="anonymous"
+		/>
+		<title>Algo Visuo</title>
+	</head>
+	<body>
+		<nav class="navbar bg-dark">
+			<a href="#" class="navbar-brand text-white">AlgoVisuo</a>
+			<div class="d-flex mx-auto align-items-center justify-content-center">
+				<button class="btnGenerate nav-item btn btn-warning mr-2">
+					Generate Random Array
+				</button>
+				<form class="mr-2">
+					<select id="algList" class="form-control">
+						<option value="buble">Bubble Sort</option>
+						<option value="selection" disabled>Selection Sort</option>
+						<option value="insertion" disabled>Insertion Sort</option>
+						<option value="merge" disabled>Merge Sort</option>
+					</select>
+				</form>
+				<button class="btnSort nav-item btn btn-primary mr-2">Sort</button>
+			</div>
+		</nav>
+		<!-- Chart goes here  -->
+		<div class="container">
+			<h2 class="m-4">Your Visualization:</h2>
+			<hr />
+			<div
+				class="chart mt-5 d-flex align-items-end justify-content-center"
+			></div>
+			<hr />
+		</div>
+
+		<footer class="footer fixed-bottom mt-5 p-3 bg-light mx-auto text-center">
+			AlgoVisuo <small class="text-muted">by MK ©</small>
+		</footer>
+		<script src="Algorithms.js"></script>
+		<script src="UIController.js"></script>
+		<script src="App.js"></script>
+	</body>
+</html>
