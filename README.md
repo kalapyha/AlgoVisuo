@@ -1,4 +1,4 @@
-# MicroPosts APP
+# Algorithms Visualization APP
 
 ![](images/screen.png)
 
